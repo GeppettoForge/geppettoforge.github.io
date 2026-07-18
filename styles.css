@@ -58,7 +58,7 @@ body::after {
 }
 
 .hero {
-  width: min(100%, 72rem);
+  width: min(100%, 90rem);
   min-width: 0;
   padding: clamp(1.25rem, 4vw, 2rem) clamp(1rem, 4vw, 1.5rem)
     clamp(2rem, 6vw, 3rem);
@@ -70,7 +70,7 @@ body::after {
 
 .hero__image {
   display: block;
-  width: min(100%, 36rem);
+  width: min(100%, clamp(36rem, 70vw, 76rem));
   max-width: 100%;
   height: auto;
   filter:
@@ -127,16 +127,10 @@ body::after {
   }
 
   .hero__image {
-    width: min(100%, 18rem);
+    width: min(100%, 36rem);
   }
 
   .hero__title {
     letter-spacing: 0.12em;
-  }
-}
-
-@media (max-width: 30rem) {
-  .hero__image {
-    width: min(100%, 12rem);
   }
 }
